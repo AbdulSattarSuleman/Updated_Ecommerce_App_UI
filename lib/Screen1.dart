@@ -30,7 +30,7 @@ class _ScreenOneState extends State<ScreenOne> {
     // return MaterialApp(
     //   debugShowCheckedModeBanner: false,
     //   home:
-    Scaffold(
+    return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
         centerTitle: true,

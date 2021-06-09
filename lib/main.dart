@@ -83,7 +83,10 @@ class MyApp extends StatelessWidget {
                 height: 40,
               ),
               ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => ScreenThree()));
+                  },
                   child: Text(
                     "Screen 3",
                   ),
