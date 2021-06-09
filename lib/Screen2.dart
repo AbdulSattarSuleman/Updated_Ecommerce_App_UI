@@ -8,11 +8,10 @@ class ScreenTwo extends StatefulWidget {
 class _ScreenTwoState extends State<ScreenTwo> {
   @override
   Widget build(BuildContext context) {
-    return
-        // MaterialApp(
-        //   debugShowCheckedModeBanner: false,
-        //   home:
-        Scaffold(
+    // MaterialApp(
+    //   debugShowCheckedModeBanner: false,
+    //   home:
+    return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
         centerTitle: true,

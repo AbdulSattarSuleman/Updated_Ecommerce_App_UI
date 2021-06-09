@@ -23,72 +23,72 @@ class _ScreenThreeState extends State<ScreenThree> {
   var item8 = new Items("Mercedes", "5.0 (23 Reviews)", "Mercedes.jpg", "\$10");
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.white,
-          centerTitle: true,
-          title: Text(
-            "Ecom App UI",
-            style: TextStyle(
-              color: Colors.black,
-              fontSize: 24,
-              fontWeight: FontWeight.w500,
-            ),
+    // MaterialApp(
+    //   debugShowCheckedModeBanner: false,
+    //   home:
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        centerTitle: true,
+        title: Text(
+          "Ecom App UI",
+          style: TextStyle(
+            color: Colors.black,
+            fontSize: 24,
+            fontWeight: FontWeight.w500,
           ),
-          actions: [
-            Padding(
-              padding: const EdgeInsets.only(right: 10.0),
-              child: IconButton(
-                icon: Icon(
-                  Icons.notifications_active,
-                  size: 24,
-                  color: Colors.black,
-                ),
-                onPressed: () {},
-              ),
-            )
-          ],
         ),
-        body: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              SizedBox(
-                height: 10,
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 10.0),
+            child: IconButton(
+              icon: Icon(
+                Icons.notifications_active,
+                size: 24,
+                color: Colors.black,
               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 10.0, right: 10),
-                child: Container(
-                  width: 400,
-                  child: TextField(
-                    decoration: InputDecoration(
-                      border: OutlineInputBorder(
-                        borderSide: BorderSide(color: Color(0xc0c0c0)),
-                        borderRadius: BorderRadius.circular(4),
-                      ),
-                      hintText: "Username",
-                      suffixIcon: Icon(Icons.search),
+              onPressed: () {},
+            ),
+          )
+        ],
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            SizedBox(
+              height: 10,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 10.0, right: 10),
+              child: Container(
+                width: 400,
+                child: TextField(
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderSide: BorderSide(color: Color(0xc0c0c0)),
+                      borderRadius: BorderRadius.circular(4),
                     ),
+                    hintText: "Username",
+                    suffixIcon: Icon(Icons.search),
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 21.0, top: 15),
-                child: Text("History"),
-              ),
-              SizedBox(height: 20),
-              myCustomListTile(item1),
-              myCustomListTile(item2),
-              myCustomListTile(item3),
-              myCustomListTile(item4),
-              myCustomListTile(item5),
-              myCustomListTile(item6),
-              myCustomListTile(item7),
-              myCustomListTile(item8),
-            ],
-          ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 21.0, top: 15),
+              child: Text("History"),
+            ),
+            SizedBox(height: 20),
+            myCustomListTile(item1),
+            myCustomListTile(item2),
+            myCustomListTile(item3),
+            myCustomListTile(item4),
+            myCustomListTile(item5),
+            myCustomListTile(item6),
+            myCustomListTile(item7),
+            myCustomListTile(item8),
+          ],
         ),
       ),
     );
